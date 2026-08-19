@@ -1,6 +1,6 @@
 import streamlit as st
 from constanst import APP_TITLE, APP_SUBTITLE
-from utils import load_model, predict_demand
+from utils import load_model, predict_demand, generate_explanation
 
 model = load_model()
 
@@ -69,6 +69,8 @@ if st.button('Predict Demand', use_container_width=True):
     }
     prediction = predict_demand(model, input_data)
 
+    explanation = generate_explanation(input_data, prediction)
+
     st.divider()
     st.metric(
         label="Predicted Bike Rental Demand",
@@ -81,3 +83,6 @@ if st.button('Predict Demand', use_container_width=True):
         st.warning("Moderate demand expected. Ensure sufficient bike availability.")
     else:
         st.success("High demand expected! Ensure maximum bike availability.")
+
+    st.markdown('### AI Explanation of Prediction')
+    st.write(explanation)
