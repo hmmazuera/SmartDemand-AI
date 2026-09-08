@@ -135,7 +135,17 @@ The Docker container installs all required dependencies, including the libraries
 
 The OpenRouter API key is provided through an environment variable and is not stored inside the Docker image or repository.
 
-### Build the Docker Image
+### Build and running the Docker Image
 
 ```bash
 docker build -t smartdemand-ai .
+
+docker run -p 8501:8501 --env-file .env smartdemand-ai
+```
+
+### Author
+
+Mauricio Mazuera
+
+LinkedIn: "https://www.linkedin.com/in/mauricio-mazuera-a0a7a933b/"
+GitHub: "https://github.com/hmmazuera/SmartDemand-AI"
