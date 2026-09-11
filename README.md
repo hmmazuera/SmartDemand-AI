@@ -157,7 +157,7 @@ The OpenRouter API key is provided through an environment variable and is not st
 
 ### Live Demo
 
-[SmartDemand-AI – Live Demo](http://16.60.164.138:8501)
+[SmartDemand-AI – Live Demo](http://16.61.56.50:8501)
 
 ### Author
 
