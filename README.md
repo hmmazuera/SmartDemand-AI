@@ -143,9 +143,26 @@ docker build -t smartdemand-ai .
 docker run -p 8501:8501 --env-file .env smartdemand-ai
 ```
 
+## AWS Deployment
+
+SmartDemand-AI is deployed on an AWS EC2 instance using Docker.
+
+The application runs inside a Docker container and is exposed through port 8501, making the Streamlit application accessible through a public URL.
+
+### Deployment Architecture
+
+User → AWS EC2 → Docker Container → Streamlit → XGBoost + OpenRouter API
+
+The OpenRouter API key is provided through an environment variable and is not stored in the GitHub repository or Docker image.
+
+### Live Demo
+
+[SmartDemand-AI – Live Demo](http://16.60.164.138:8501)
+
 ### Author
 
 Mauricio Mazuera
 
 LinkedIn: "https://www.linkedin.com/in/mauricio-mazuera-a0a7a933b/"
+
 GitHub: "https://github.com/hmmazuera/SmartDemand-AI"
