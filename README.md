@@ -4,6 +4,10 @@ SmartDemand-AI is a machine learning application that predicts hourly bike renta
 
 The project combines an XGBoost regression model with a Streamlit web application and an LLM-powered explanation layer using the OpenRouter API.
 
+### Live Demo
+
+[SmartDemand-AI – Live Demo](http://16.61.56.50:8501)
+
 ## Business Problem
 
 Bike-sharing services need to anticipate rental demand in order to allocate bicycles efficiently and reduce shortages or unused capacity.
@@ -155,9 +159,6 @@ User → AWS EC2 → Docker Container → Streamlit → XGBoost + OpenRouter API
 
 The OpenRouter API key is provided through an environment variable and is not stored in the GitHub repository or Docker image.
 
-### Live Demo
-
-[SmartDemand-AI – Live Demo](http://16.61.56.50:8501)
 
 ### Author
 

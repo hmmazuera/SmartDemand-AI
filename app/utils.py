@@ -48,3 +48,5 @@ def generate_explanation(features, prediction):
         return f"OpenRouter Error: {response}"
 
     return response["choices"][0]["message"]["content"]
+
+
