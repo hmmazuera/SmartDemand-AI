@@ -22,6 +22,10 @@ It contains hourly bike rental records together with temporal, weather, and cont
 
 The dataset contains 10,886 records and 12 original variables.
 
+![Home](images/home.png)
+![Prediction](images/prediction.png)
+![Result](images/result.png)
+
 ### Main Variables
 
 | Variable | Description |
